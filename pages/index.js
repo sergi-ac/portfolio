@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { fetchContentfulData } from "@/fetchContentfulData";
 import ProjectHomePhotos from "@/components/home/ProjectHomePhotos";
+import AboutSection from "@/components/home/AboutSection";
 
 export const getStaticProps = async () => {
   const query = `
@@ -45,7 +46,7 @@ export default function Home({projects}) {
         {projects.map((project, id) => (
           <ProjectHomePhotos key={id} project={project} />
         ))}
-      {/* <AboutSection/> */}
+      <AboutSection/>
     </Layout>
   );
 }
