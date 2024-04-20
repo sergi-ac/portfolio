@@ -139,7 +139,7 @@ a:hover {
 .about-container{
   width: 100%;
   grid-column: span 12;
-  height: 50vh;
+  min-height: 50vh;
   padding: 25px;
   padding-bottom: 70px;
 }
